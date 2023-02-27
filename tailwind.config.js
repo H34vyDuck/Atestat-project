@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     colors: {
         'primary' : "#0d232e",
+        'light-primary' : "#112d3c",
         'secondary' : "#ffffff",
+        'shadow-secondary' : "#e6e6e6",
         'info' : "#c79604",
     },
     extend: {
@@ -27,7 +29,7 @@ module.exports = {
         'spin-slow-30': 'spin 30s linear infinite',
         'spin-slow-25': 'spin 25s linear infinite',
         'spin-slow-10': 'spin 10s linear infinite',
-        'marquee-infinite' : 'marquee 25s linear infinite',
+        'marquee-infinite' : 'marquee 24s linear infinite',
       },
     },
   },

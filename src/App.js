@@ -2,6 +2,7 @@
 import Main from './components/Navbar';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
+import Form from './components/Registration'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Main />
       <Hero />
       <Menu />
+      <Form />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Conatact from "./contacts";
+import Data from './data.json'
 
 export default function Menu(){
     return(
@@ -20,29 +21,20 @@ export default function Menu(){
                     <h1 className='text-info flex self-start py-4 font-bold text-4xl'>About Us</h1>
                     <p>Our story</p>
                 </div>
-                    <div className='w-2/3 h-68 overflow-hidden'>
+                    <div className='w-2/3 h-68 overflow-hidden '>
                         <div className='flex animate-marquee-infinite'>
                             <div className='flex justify-around'>
-                                <Conatact
-                                    name='#'
-                                    phone='#'
-                                    email='#'
-                                />
-                                <Conatact
-                                    name='#'
-                                    phone='#'
-                                    email='#'
-                                />
-                                <Conatact
-                                    name='#'
-                                    phone='#'
-                                    email='#'
-                                />
-                                <Conatact
-                                    name='#'
-                                    phone='#'
-                                    email='#'
-                                />
+                                {
+                                    Data.map(element => {
+                                        return(
+                                            <Conatact 
+                                                name = {element.firstName}
+                                                phone = {element.phone}
+                                                email = {element.email}
+                                            />
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

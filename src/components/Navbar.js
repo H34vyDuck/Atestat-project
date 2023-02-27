@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Navbar(){
     return(
-        <header className="sticky top-0 font-play font-thin">
-            <nav className="bg-primary shadow-xl">
+        <header className="sticky top-0 font-play font-bold">
+            <nav className="bg-light-primary shadow-xl">
                 <div className="text-info flex flex-row justify-between max-wl-7xl px-4">
                     <div className="flex space-x-4 pl-12">
                         <a href="#" className="flex item-center px-3 py-6">
