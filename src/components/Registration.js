@@ -7,6 +7,10 @@ export default function From(){
     const [date, setDate] = useState(' '); 
     const [persons, setPersons] = useState(' '); 
 
+    const handleSubmit = (e) => {
+        console.log('file updated!');
+      }
+
     return(
         <div>
             <div className='
@@ -70,7 +74,7 @@ export default function From(){
                                                                     '/>
                     </label>
                 </form>
-                <div className='w-28 h-10 bg-light-wprimary rounded-2xl flex justify-center hover:bg-shadow-secondary'>
+                <div className='w-28 h-10 bg-primary border-shadow rounded-2xl flex justify-center hover:bg-shadow-secondary hover:delay-250'>
                     <button onClick={handleSubmit}>
                         Submit
                     </button>
@@ -78,7 +82,7 @@ export default function From(){
 
                 <p>{setfName}</p>
 
-                <div className='w-2/3 pt-24 pb-56'>
+                <div className='w-2/3 pt-24 pb-72'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam distinctio corrupti in, nihil nobis id tempore unde aut sapiente iure nemo inventore veritatis enim quisquam itaque cupiditate, deserunt dolorem odit?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repellendus qui veritatis et voluptatem libero beatae magnam, doloremque error maxime nesciunt natus ratione commodi exercitationem esse? Minima eos facilis vitae!
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ea accusamus corrupti obcaecati vitae beatae reprehenderit quod esse perferendis quia recusandae adipisci modi fuga omnis, est et soluta? Odit, temporibus?

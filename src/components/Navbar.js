@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navbar(){
     return(
-        <header className="sticky top-0 font-play font-bold">
+        <header className="sticky top-0 font-play font-bold z-50">
             <nav className="bg-light-primary shadow-xl">
                 <div className="text-info flex flex-row justify-between max-wl-7xl px-4">
                     <div className="flex space-x-4 pl-12">
